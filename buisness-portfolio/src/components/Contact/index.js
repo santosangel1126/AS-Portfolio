@@ -15,7 +15,8 @@ function ContactForm() {
                 setErrorMessage('Your email is invalid.');
             } else {
                 setErrorMessage('');
-            }else{
+            }
+        }else{
                 if (!e.target.value.length){
                     setErrorMessage(`${e.target.name} is required.`);
                 } else {
@@ -36,7 +37,31 @@ function ContactForm() {
             console.log(formState);
         }
         //JSX
-        
+         return (
+            <section>
+                <h1 data-testid="h1tag">Contact Me:</h1>
+                <form id="Contact-form" onSubmit={handleSubmit}>
+                    <div>
+                        <label htmlFor='name'>Name:</label>
+                        <input type="text" name="name" defaultValue={name} onBlur={handleChange}/>
+                    </div>
+                    <div>
+                        <label htmlFor='email'>Email Address:</label>
+                        <input type="email" name='email' defaultValue={email} onBlur={handleChange}/>
+                    </div>
+                    <div>
+                        <label htmlFor='mesage'>Message:</label>
+                        <textarea name='message' rows='6' defaultValue={message} onBlur={handleChange}/>
+                    </div>
+                    {errorMessage && (
+                        <div>
+                            <p className='error-text'>{errorMessage}</p>
+                        </div>
+                    )}
+                    <button data-testid="button" type='submit'>Submit</button>
+                </form>
+            </section>
+         )
         }
-    }
-}
+    
+export default ContactForm;
