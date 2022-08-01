@@ -14,7 +14,7 @@ function Nav(props) {
                     <img 
                     //src assigned required expression | incremental naming of the imgs using i 
                     //default property --> is where the img has been saved. to render img, default property must be invoked
-                    src={require(`../../assets/navphoto/`)}
+                    src={require(`../../assets/navphoto/family.JPG`)}
                     alt={NavImage}
                     />
                 </a>

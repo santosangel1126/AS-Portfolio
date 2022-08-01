@@ -22,7 +22,7 @@ function ContactForm() {
                 } else {
                     setErrorMessage('');
                 }
-                comsole.log('errorMessage', errorMessage);
+                console.log('errorMessage', errorMessage);
             }
 
             if (!errorMessage){
