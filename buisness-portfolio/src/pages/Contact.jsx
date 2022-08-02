@@ -37,6 +37,7 @@ const Contact = () => {
     
     
 };
+ 
 return (
     <section className={contact}>
         <h2 className='text-white pt-4'>Contact Me</h2>
@@ -56,7 +57,7 @@ return (
                     rel='noreferrer'
                     href="htpps://m.me/angel.santos"
                     >
-
+                     Send Message
                     </a>
                 </article>
                 </div>
@@ -83,5 +84,7 @@ return (
                 </div> 
     </section>
 );
+
+
 
 export default Contact;
