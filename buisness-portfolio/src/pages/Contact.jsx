@@ -1,17 +1,20 @@
 import React, {useRef} from "react";
-import contact from "../assets/styles/contact.css";
-import send from '../assets/images/sendmail.jpeg';
+import contact from "../Assets/Styles/contact.css";
+import sendmail from '../assets/images/sendmail.jpeg';
 import {AiOutlineMail} from 'react-icons/ai';
 import {BsMessenger} from 'react-icons/bs';
 import emailjs from "emailjs-com";
-import e from "express";
+
 
 const Contact = () => {
-    e.preventDefault();
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
 
     // lets user know message was sent 
     const feedbackEL = document.querySelector('.feedback');
-    feedbackEl.setAttribute('class', 'feedback');
+    feedbackEL.setAttribute('class', 'feedback');
     setTimeout(function(){
         feedbackEL.setAttribute('class','feedback hide');
 
@@ -19,13 +22,13 @@ const Contact = () => {
 
     emailjs
     .sendform(
-        "service_fu)e95l",
+        "service_fue95l",
         "template_gdjxp6g",
         form.current,
         "KfGVyjhX_IvddnHea"
     )
     .then(
-        (results) => {
+        (result) => {
             console.log(result.text);
         },
         (error) => {
@@ -35,8 +38,8 @@ const Contact = () => {
 
    e.target.reset();
     
-    
-};
+    };
+
  
 return (
     <section className={contact}>
@@ -78,12 +81,13 @@ return (
                     <button type='submit' className=" send btn btn-primary text-white">
                         Send Message
                     </button>
-                    <div className="feedback hide"><img src={flyingnembis} alt='' height='150'/>
+                    <div className="feedback hide"><img src={sendmail} alt='' height='150'/>
                     </div>
                 </form>
                 </div> 
     </section>
 );
+};
 
 
 
