@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+.container.contact_container {
+    width: 60%;
+    display: flex;
+    gap:5%;
+}
+
+.contact_options {
+    display: block;
+}
+
+.contact_options {
+    background: rgb(49,112,222);
+    padding: 1.2rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    font-family: 'Handlee', cursive;
+}
+
+.contact_option:hover {
+    background: rgb(79, 84, 82);
+}
+
+.contact_option-icon {
+    font-size: 40px;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+.contact_option a {
+    margin-top: 0.7rem;
+    display: inline-block;
+    font-size: 15px;
+    color:white;
+    font-family: 'Handlee', cursive;
+    text-decoration: none;
+}
+
+.send {
+    font-family:  'Handlee', cursive;
+}
+
+.hide{
+    display: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+input, textarea {
+    width: 310px;
+    padding:1.5rem;
+    border-radius: 0.5;
+    resize: none;
+    color: black;
+    font-family: 'Handlee', cursive;
+}
+
+@media screen and (max-width: 710px) {
+    .comtainer.container.contact_container {
+        width:58%;
+        display: flex;
+        gap: 5%;
+    }
+    .contact_options {
+        display: flex;
+        gap: 1.2rem;
+    }
+}

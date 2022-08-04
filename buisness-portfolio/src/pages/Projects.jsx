@@ -16,12 +16,12 @@ function Project(props) {
                               <a href={project.live} target="_blank" rel="noreferrer">
                                   <img className="portcard"
                                   src={process.env.PUBLIC_URL + project.image}
-                                  alt="Placeholder image"
+                                  alt="Placeholder "
                                   />
                               </a>
                               <div className="link px-2">
                                   <div>
-                                      <a href={projects.repo} target="_blank" rel="noreferrer">
+                                      <a href={project.repo} target="_blank" rel="noreferrer">
                                           <FaGithub size={20} />
                                       </a>
                                   </div>
