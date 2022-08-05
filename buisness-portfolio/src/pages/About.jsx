@@ -1,5 +1,5 @@
 import React from 'react';
-import cloud from '../assets/photos'
+import cloud from '../Assets/images/cloud.png';
 
 function About() {
     return (

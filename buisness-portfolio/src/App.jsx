@@ -1,10 +1,10 @@
- import {Routes, BrowserRouter as Router,  Route } from 'react-router-dom';
- import Home from './pages/Home';
- import Contact from './pages/Contact';
- import About from './pages/About';
- import Project from './pages/Portfolio';
- import Global from './pages/Global';
- import '.App.css';
+ import {Routes, BrowserRouter as Router, Link, Route } from 'react-router-dom';
+ import Home from '../src/pages/Home';
+ import Contact from '../src/pages/About';
+ import About from '../src/pages/About';
+ import Project from '../src/pages/Portfolio';
+ import Global from '../src/pages/Global';
+ import '../src/App.css';
 
  function App(){
     return (

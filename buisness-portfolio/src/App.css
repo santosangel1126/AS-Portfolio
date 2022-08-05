@@ -1,5 +1,5 @@
-/*/@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
 *{
   text-decoration: none;
@@ -18,18 +18,207 @@ h1 {
   font-size: 2rem;
 }
 
-
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+section > h2,
+section > h5{
+text-align: center;
+font-family:'Oswald';
+font-size:40px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+footer{
+  position: absolute;
+  /* position: sticky; */
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 3rem;
+}
+.name{
+  font-family: "PermanentMarker", cursive;
+  font-size: 100px;
+  margin-top: 1rem;
+}
+.aboutMe {
+  margin-top: 10rem;
+  font-size: 20px;
+  text-align: center;
+  padding: 2rem;
+  background: rgb(30,30,30);
+  opacity: 75%;
+  border-radius: 10px;
+  width: 40rem;
+  font-family: "Handlee", cursive;
+}
+.about-container{
+  display: flex;
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%,-50%);
+  flex-direction: row;
+  justify-content: center;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  width: 80%;
+}
+.aboutMe-img {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top:7rem;
+  margin-right: 2rem;
+}
+.dl {
+  margin:0.2rem 0 0 4rem;
+  font-family: "Handlee", cursive;
+  padding: 5px 15px 5px 15px;
+}
+.title {
+  font-size: 20px;
+  text-align: center;
+}
+.container {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1rem;
+  opacity:85%;
+  width: 70%;
+  margin: auto;
+}
+.btn {
+  width: max-content;
+  display: inline-block;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+.navtop {
+  text-decoration: none;
+  font-size: 25px;
+  font-family: 'Oswald';
+}
+.contactEl {
+  display: inline-block;
+  margin: 10px;
+  text-decoration: none;
+  color: white;
+}
+.contactEl:hover {
+  color:rgb(28,196,129);
+}
+.video {
+  position: fixed;
+  width: 100%;
+  left: 50%;
+  top: 50%;
+  height:100%;
+  object-fit: cover;
+  transform: translate(-50%,-50%);
+  z-index: -1;
+}
+.bg-black {
+  opacity: 60%;
+}
+.portcard {
+  height: 200px;
+  width: 246px;
+}
+.card {
+  margin: 10px;
+  height: 300px;
+  width: 250px;
+  border: 2px solid rgb(32,31,31);
+  border-radius: 6px;
+}
+.card-header {
+  font-size: 18px;
+  text-align: center;
+  border-radius: 10px;
+  font-family: 'Handlee', cursive;
+}
+.link {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 6px;
+}
+.initialIntro {
+  height: auto;
+  display: table;
+  margin: 0 auto;
+  transform: translatey(0px);
+  animation: float 6.3s ease-in-out infinite;
+}
+@keyframes float {
+  0% {
+    transform: translateY(30px)
+  }
+  50% {
+    transform: translateX(-30px);
+  }
+  100% {
+    transform: translateY(30px);
   }
 }
+@media screen and (max-width:600px) {
+  .portcard {
+    height: 120px;
+    width:176px;
+  }
+  .card {
+    height: 230px;
+    width:180px;
+  }
+  .card-header {
+    font-size: 14px;
+  }
+
+  .aboutMe-img {
+    margin-top: 6rem;
+  }
+}
+@media screen and (max-width: 620px) {
+  .portcard {
+    height: 120px;
+    width:176px;
+  }
+  .card {
+    height: 230px;
+    width: 180px;
+  }
+  .card-header {
+    font-size: 14px;
+  }
+  .link {
+    margin-top: 0.8rem;
+  }
+}
+@media screen and (max-width: 775px) {
+  .portcard {
+    height: 120px;
+    width: 196px;
+  }
+  .card {
+    height:260px;
+    width: 200px;
+  }
+  .card-header {
+    font-size: 16px;
+  }
+  .link { 
+    margin-top: 1.5rem;
+  }
+
+  .aboutMe-img {
+    margin: auto;
+  }
+}
+  
+
 
 .App-header {
   background-color: #282c34;
