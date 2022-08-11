@@ -1,5 +1,5 @@
 import React from 'react';
-import cloud from '../Assets/images/cloud.png';
+import family from '../Assets/navphoto/family.JPG';
 
 function About() {
     return (
@@ -18,7 +18,7 @@ function About() {
                      to new places such as: Hiking, Aquariums, park. its so crazy to see the world through his eyes ! 
                 </p>
                 <div className="aboutMe-img">
-                    <img src={cloud} alt='' height='220'/>
+                    <img src={family} alt='' height='220'/>
                     <a 
                     href={process.env.PUBLIC_URL + "/Angel-Santos-Resume.pdf"}
                     target='_blank' rel='noreferrer'

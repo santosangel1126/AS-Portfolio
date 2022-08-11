@@ -1,5 +1,5 @@
 import React from 'react';
-import Project from './Projectsnpm start git';
+import Project from './Projects';
 
 const projects = [
     {
@@ -33,10 +33,10 @@ const projects = [
          live:"https://github.com/santosangel1126/Sanchez-Detailing"
        },
        {
-         title:"",
-         image:"",
-         repo:"",
-         live:""
+         title:"Ever After Bakery",
+         image:"../src/Assets/images/bakery.png",
+         repo:"https://github.com/Azurene/ever-after-bakery.git",
+         live:"https://ever-after-bakery.herokuapp.com/"
        },
 ];
 

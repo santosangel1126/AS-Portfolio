@@ -4,16 +4,14 @@ import {FaGithub} from 'react-icons/fa';
 import {AifillLinkedin} from 'react-icons/ai';
 import {AiOutlineMail} from 'react-icons/ai';
 import{IoIoPaper} from 'react-icons/io';
-import initiald from '../Assets/images/initiald-anime.gif';
+import flying from '../Assets/images/flying.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Global() {
     return(
         <section>
             <header>
-                <video autoPlay loop muted className='gtr'>
-                    <source src={initiald} type='initiald.gif' />
-                </video>
+                <img src={flying} alt="" />
                 <nav className='navbar navbar-dark bg-black nav-pills justify-content-end px-2'>
                     <Link className='navTop text-white px-2' to='/'>
                         Home

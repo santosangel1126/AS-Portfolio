@@ -1,6 +1,6 @@
 import React, {useRef} from "react";
 import contact from "../Assets/Styles/contact.css";
-import sendmail from '../assets/images/sendmail.jpeg';
+import sendmail from '../Assets/images/sendmail.jpeg';
 import {AiOutlineMail} from 'react-icons/ai';
 import {BsMessenger} from 'react-icons/bs';
 import emailjs from "emailjs-com";
